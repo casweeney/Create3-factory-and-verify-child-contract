@@ -1,13 +1,12 @@
-# Sample Hardhat Project
+# Create3 Factory Contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project demonstrates how to create clone contracts using create3 and also verify that the clone was actually created by the factory contract.
 
-Try running some of the following tasks:
+Given a salt, an address for the clone contract can be derived and with this, you can verify the clone contract with same salt.
 
-```shell
-npx hardhat help
+To test this project, clone it and run the following:
+
+```
 npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
 npx hardhat run scripts/deploy.ts
 ```
